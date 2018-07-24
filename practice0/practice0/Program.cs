@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+//ZACHS using
 
 namespace practice0
 {
@@ -16,14 +13,56 @@ namespace practice0
         // -do something interesting
         // -if you change to much, try to preserve previous code to other burner classes to avoid deletion (for preservation of old fun for record)
 
+
         static void Main(string[] args)
         {
-            // - Moved script to static class
-            Script.startScript();
+            //Add options HERE and in SWITCH
+            string[] options = {    "1 - Comment Script", 
+                                    "2 - Future Game" 
+                                };    
 
+
+            string optionsString = $"There are {options.Length} options.";
+            bool gameOn = true;
+
+            Console.WriteLine($"Hello, t{optionsString.Substring(1)}");  //removed first letter of optionsString to make capital.
+
+            int option;
+            while (gameOn)
+            {
+                foreach (string opt in options)
+                {
+                    Console.WriteLine(opt);
+                }
+                Console.WriteLine("Please select a number or select 0 to quit");
+
+                option = Convert.ToInt32(Console.ReadLine()); //READ INT
+                Console.WriteLine("");
+                switch (option)
+                {
+                    case 0:
+                        System.Environment.Exit(1);
+                        break;
+                    case 1:
+                        Script.startScript();
+                        break;
+                    case 2:
+                        //NEW THING
+                        Console.WriteLine("Coming soon");
+                        break;
+
+                }
+
+                //Closing loop statements
+                option = -1;
+                Console.WriteLine($"\n{optionsString}");
+            }
 
 
             Console.Read();
         }
+
+        
+        
     }
 }
