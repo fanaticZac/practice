@@ -22,13 +22,11 @@ namespace practice0
 
             string[] comments = {   "I created project, then put a shortcut in the main folder.",
                                     "I updated the project and hopefully this works",
-                                    "I added array and loop to function, added comments, and arrays",
-                                    "I am going to build the solution before I commit and hopefully don't fuck it up"
+                                    "I added array and loop to function, added comments, and arrays"
                                 };
 
 
-            //loop now continues for whole array regardless of length
-            for (int i = 0; i < comments.Length; i++)  //checks for odd or even, assuming we take turns
+            for (int i = 0; i <= 2; i++)  //checks for odd or even, assuming we take turns
             {
                 //ternary operator with modulus to variable for speaker
                 string speaker = (i % 2 == 0) ? names[0] : names[1]; //terniary operator - compact if/else
