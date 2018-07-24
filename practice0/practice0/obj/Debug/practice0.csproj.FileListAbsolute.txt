@@ -1,0 +1,7 @@
+E:\gitHub\practice\practice0\practice0\bin\Debug\practice0.exe.config
+E:\gitHub\practice\practice0\practice0\bin\Debug\practice0.exe
+E:\gitHub\practice\practice0\practice0\bin\Debug\practice0.pdb
+E:\gitHub\practice\practice0\practice0\obj\Debug\practice0.csprojAssemblyReference.cache
+E:\gitHub\practice\practice0\practice0\obj\Debug\practice0.csproj.CoreCompileInputs.cache
+E:\gitHub\practice\practice0\practice0\obj\Debug\practice0.exe
+E:\gitHub\practice\practice0\practice0\obj\Debug\practice0.pdb
