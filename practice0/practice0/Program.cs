@@ -10,9 +10,13 @@ namespace practice0
     {
         static void Main(string[] args)
         {
-            Console.Write("I created project, then put a shortcut in the main folder.");
+            Console.WriteLine("I created project, then put a shortcut in the main folder.");
+
+            Console.WriteLine("I updated the project and hopefully this works");
 
             Console.Read();
+
+
         }
     }
 }
