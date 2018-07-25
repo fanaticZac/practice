@@ -16,6 +16,8 @@ namespace practice0
 
         static void Main(string[] args)
         {
+            PlayArea playArea = new PlayArea();
+
             //Add options HERE and in SWITCH
             string[] options = {    "1 - Comment Script", 
                                     "2 - Future Game" 
@@ -47,8 +49,9 @@ namespace practice0
                         Script.startScript();
                         break;
                     case 2:
-                        //NEW THING
-                        Console.WriteLine("Coming soon");
+                        //Now Displays Preview
+                        Console.WriteLine("Preview");
+                        Console.WriteLine(playArea.DisplayGameBoard());
                         break;
 
                 }
