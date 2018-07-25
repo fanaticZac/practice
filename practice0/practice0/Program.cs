@@ -35,9 +35,12 @@ namespace practice0
                     Console.WriteLine(opt);
                 }
                 Console.WriteLine("Please select a number or select 0 to quit");
+                
 
-                option = Convert.ToInt32(Console.ReadLine()); //READ INT
+                option = (Int32.TryParse(Console.ReadLine(), out option)) ? option : -1 ; //READ STRING, TRY PARSE TO INT, WITH TERNARY OPERATOR
                 Console.WriteLine("");
+                Console.BackgroundColor = ConsoleColor.DarkBlue; // ADDED COLOR
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 switch (option)
                 {
                     case 0:
@@ -50,10 +53,15 @@ namespace practice0
                         //NEW THING
                         Console.WriteLine("Coming soon");
                         break;
-
+                    default:
+                        Console.WriteLine("Incorrect input");
+                        break;
                 }
 
+
+
                 //Closing loop statements
+                Console.ResetColor();
                 option = -1;
                 Console.WriteLine($"\n{optionsString}");
             }
