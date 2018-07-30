@@ -20,7 +20,7 @@ namespace practice0
 
             //Add options HERE and in SWITCH
             string[] options = {    "1 - Comment Script", 
-                                    "2 - Future Game" 
+                                    "2 - Grid Game" 
                                 };    
 
 
